@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.pc.myapp_chuongwu.JiYangActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="寄养详情"
+    android:id="@+id/textView"
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginLeft="145dp"
+    android:layout_marginStart="145dp" />
+        <ImageView
+            android:id="@+id/Back_Four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_back_img"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+
+            android:layout_marginTop="12dp" />
+        <TextView
+            android:id="@+id/shouji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="手机电话"
+            android:layout_marginTop="18dp"
+          />
+
+        <TextView
+            android:id="@+id/cengshi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+
+            android:text="所在城市"
+
+
+            android:layout_weight="0.16" />
+
+
+
+        <TextView
+            android:id="@+id/dizhi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="家庭地址"
+            android:layout_marginTop="17dp"
+           />
+
+
+        <TextView
+            android:id="@+id/shenfen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="身份证"
+
+            android:layout_marginTop="15dp" />
+
+
+    </LinearLayout>
+  <ImageView
+      android:id="@+id/tupain"
+      android:layout_width="@dimen/x6"
+      android:layout_height="@dimen/x6"
+      android:src="@drawable/ss"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/ijk_color_blue_100"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+     <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="可寄养宠物的价格/类型"
+
+         android:id="@+id/textView2" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <CheckBox
+        android:id="@+id/dui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/selected"
+        android:layout_marginTop="30dp" />
+
+
+</LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
